@@ -1,1 +1,37 @@
 @use '../global' as *;
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    .logo{
+        display: flex;
+        flex-direction: column;
+        max-width: 50%;
+        object-fit: contain;
+        max-width: 8%;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    
+    }
+    ul{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin-left: 20%;
+        
+   
+        //position: map-values($position-center);
+    }
+    li, a{
+        //display: map-values($position-center);
+        //display: flex;
+        //flex-direction: column;
+        color: map-get($map: $colors, $key: secondary);
+        margin: $nav-spacing-mobile;
+        text-decoration: none;
+     
+    }
+}
+
