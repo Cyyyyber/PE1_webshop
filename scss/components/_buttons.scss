@@ -1,0 +1,10 @@
+@use '../global' as *;
+
+.btn{
+    max-width: fit-content;
+    background-color: transparent;
+    color: map-get($map: $colors, $key: secondary);
+    padding: .5rem 1rem .5rem 1rem;
+    border-radius: 1rem;
+    border: .1rem solid map-get($map: $colors, $key:secondary );
+}

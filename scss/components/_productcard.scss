@@ -1,12 +1,20 @@
 @use '../global' as *;
+@use 'nav' as *;
+@use 'footer' as *;
 
-  .product-card {
-    display: flex;
-    flex-direction: column;
-    max-width: 50%;
+
+
+
+
+
+
+  .product-card {    
     border-radius: 1rem;
-    padding: 1rem;
+    
     text-align: center;
+    padding-bottom: 10rem;
+    justify-content: space-evenly;
+    gap: 1rem;
   }
   
   .product-card img {
@@ -22,3 +30,42 @@
   
 
   
+.shop{
+  margin-top: 10rem;
+}
+.filters{
+  justify-content: flex-end;
+  padding-right: 1rem;
+  text-align: center;
+  p, button{
+    margin-left: 3rem;
+  }
+}
+.intro-edit{
+  margin-bottom: -5rem;
+}
+.info{
+  h1{margin-bottom: 1rem;}
+}
+.product-info-edit{
+
+  h2{margin-bottom: 1rem;}
+  
+}
+.product-card-edit{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  
+  
+}
+.product-info{
+  button{margin-top: 1rem;}
+  
+}
+.spacing{
+  margin-bottom: -10rem;
+  
+}
+.shop-section{
+  margin-bottom: 10rem;
+}

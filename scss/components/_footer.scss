@@ -1,1 +1,17 @@
 @use '../global' as *;
+
+footer{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: space-between;
+    font-size: $font-s;
+    padding-bottom: 3rem;
+}
+
+.contact-section, .brand-section, .social-section{
+    p,a, button{
+        margin-bottom: .5rem;
+        margin-top: 1rem;
+    }
+   
+}

@@ -20,8 +20,15 @@
     align-self: center;
 }
 
-
-
+.icon-social{
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    object-fit: contain;
+}
+.logo-footer{
+    max-width: 5rem;
+    max-height: 5rem;
+}
 $colors: (
     primary: #000000,
     secondary: #ffffff,
@@ -29,6 +36,8 @@ $colors: (
 
     
 );
+
+
 
 $position-center:(
     display: flex,
@@ -90,14 +99,47 @@ body{
     //background-image: map-values($map: $bg);
     color: map-get($map: $colors, $key: secondary);
     background-color: map-get($map: $colors, $key: primary);
-    font-size: $font-s;
+ 
     font-family: Verdana, Tahoma, sans-serif;
 
     @include m-breakpoint{
-        font-size: $font-m;
+       
     }
     @include l-breakpoint{
-        font-size: $font-l;
+        
     }
 }
 
+
+
+.preview{
+    max-width: 100%;
+    border-radius: 5rem;
+}
+
+
+h2, p{
+    font-size: $font-m;
+}
+h1{
+    font-size: $font-l;
+}
+
+
+.info{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
+
+
+
+.bg{
+    background-color: map-get($map: $colors, $key: primary);
+}
+
+.product-card, .intro{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
