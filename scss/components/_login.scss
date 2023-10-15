@@ -1,0 +1,39 @@
+@use '../global' as *;
+.input-edit{
+    background: transparent;
+    
+}
+
+.border{
+    border: .1rem solid map-get($map: $colors, $key:secondary );
+    max-width: fit-content;
+    border-radius: 2rem;
+
+}
+h1{font-size: $font-m;}
+
+.login{
+    gap: 2rem;
+    margin-bottom: 1rem;
+    h1{
+       
+        
+    }
+    input{
+    }
+}
+.reset{
+    color: map-get($map: $colors, $key: secondary);
+    font-size: $font-s;
+}
+.login-section{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15rem;
+    margin-top: 10rem;
+    backdrop-filter: blur(2rem);
+    padding: 10rem 10rem;
+}
+.preview{
+    cursor: pointer;
+}
